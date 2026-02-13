@@ -1,73 +1,90 @@
 export const siteConfig = {
-  name: "Ryan Fitzgerald",
-  title: "Senior Software Engineer",
+  name: "Oshan Paul",
+  title: " IoT | AI | Smart Systems Engineer",
   description: "Portfolio website of Ryan Fitzgerald",
-  accentColor: "#1d4ed8",
+  accentColor: "#030303c1",
   social: {
-    email: "your-email@example.com",
-    linkedin: "https://linkedin.com/in/yourprofile",
-    twitter: "https://x.com/rfitzio",
-    github: "https://github.com/RyanFitzgerald",
+    email: "oshan@oshanpaul.com",
+    linkedin: "https://www.linkedin.com/in/oshanpaul",
+    //LeetCode: "",
+   // github: "",
   },
   aboutMe:
-    "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rem quos asperiores nihil consequatur tempore cupiditate architecto natus commodi corrupti quas quasi facere est, dignissimos odit nam veniam sapiente ut, vitae eligendi ipsum dolor, nostrum ullam impedit! Corrupti ratione mollitia temporibus necessitatibus, consectetur reiciendis recusandae id, dolorum quaerat, vero pariatur. Ratione!",
-  skills: ["Javascript", "React", "Node.js", "Python", "AWS", "Docker"],
+    "I am a Computer Science student passionate about IoT, AI and building intelligent smart systems. I love working with embedded systems and machine learning to solve real-world problems. My focus is on creating practical, scalable and impactful technology solutions.",
+  skills: ["C/C++", "Python", "Node-Red", "HiveMq", "Embedded Systems", "IOT"],
+
+ experience: [
+
+   {
+      company: "Ladybug - Exclusive Clothing Thrift Store",
+      title: "Founder",
+      dateRange: "Feb 2025 - Oct 2025",
+      bullets: [
+        "Launched and managed a student thrift store, handling sourcing, pricing, marketing & sales.",
+        "Launched and managed a student thrift store, handling sourcing, pricing, marketing & sales.",
+        "Built a sustainable fashion initiative within the college community.",
+      ],
+    },
+    {
+      company: "E-Cell IIT Roorkee",
+      title: "Campus Ambassador",
+      dateRange: "Nov 2024 - Feb 2025",
+      bullets: [
+        "Promoted E-Cell initiatives and events within the campus community.",
+        "Engaged students through outreach activities and increased event participation.",
+        "Acted as a liaison between E-Cell and UPES campus students for communication and coordination.",
+      ],
+    },
+    {
+      company: "Wayspire EdTech Pvt Ltd.",
+      title: "Product Marketing Intern",
+      dateRange: "Aug 2024 - Sep 2024",
+      bullets: [
+        "Supported product marketing activities to boost course reach.",
+        "Performed market research and analyzed user needs.",
+        "Recognized by IIT DELHI’S TRYST",
+      ],
+    },
+    {
+      company: "Paryatan foundation",
+      title: "Manager",
+      dateRange: "June 2024 – July 2024",
+      bullets: [
+        "Worked with the GoGreen Foundation to keep the environment free of litter and other garbage.",
+        "Discussed the problems of locals and came up with innovative solutions to the various problems.",
+        "Created a common place for women to get together and classrooms for underprivileged children.",
+      ],
+    },
+  ],
+
   projects: [
     {
-      name: "AI Dev Roundup Newsletter",
+      name: "Smart Waste Segrigation System",
       description:
-        "One concise email. Five minutes. Every Tuesday. Essential AI news & trends, production-ready libraries, powerful AI tools, and real-world code examples",
-      link: "https://aidevroundup.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "An IoT-based automated system that detects and segregates waste into different categories using sensors and embedded control logic. It improves recycling efficiency, reduces manual effort, and promotes smarter, eco-friendly waste management practices.",
+      link: "",
+      skills: ["Python", "CNN", "HiveMQ", "Node-Red", "Sensors", "Raspberry-pi"],
     },
     {
-      name: "Chrome Extension Mastery: Build Full-Stack Extensions with React & Node.js",
+      name: "Smart Watch",
       description:
-        "Master the art of building production-ready, full-stack Chrome Extensions using modern web technologies and best practices",
-      link: "https://fullstackextensions.com/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Developed a wearable smartwatch prototype using Arduino that displays real-time data such as time, heart rate, and step count using integrated sensors. The device combines embedded systems and sensor integration to create a functional smart wearable.",
+      link: "",
+      skills: ["C/C++", "Arduino", "Sensors"],
     },
     {
-      name: "ExtensionKit",
+      name: "Mental Health Chatbot",
       description:
-        "Kit to jump-start your Chrome extension projects with a variety of battle-tested starter templates & examples",
-      link: "https://extensionkit.io/?ref=devportfolio",
-      skills: ["React", "Node.js", "AWS"],
+        "Developed a Python-based mental health chatbot that provides supportive responses using basic NLP and sentiment analysis techniques. The system analyzes user input to detect emotional tone and delivers context-aware replies while securely logging conversations for analysis.",
+      link: "",
+      skills: ["Python", "ML"],
     },
+
+ 
   ],
-  experience: [
-    {
-      company: "Tech Company",
-      title: "Senior Software Engineer",
-      dateRange: "Jan 2022 - Present",
-      bullets: [
-        "Led development of microservices architecture serving 1M+ users",
-        "Reduced API response times by 40% through optimization",
-        "Mentored team of 5 junior developers",
-      ],
-    },
-    {
-      company: "Startup Inc",
-      title: "Full Stack Developer",
-      dateRange: "Jun 2020 - Dec 2021",
-      bullets: [
-        "Built and launched MVP product from scratch using React and Node.js",
-        "Implemented CI/CD pipeline reducing deployment time by 60%",
-        "Collaborated with product team to define technical requirements",
-      ],
-    },
-    {
-      company: "Digital Agency",
-      title: "Frontend Developer",
-      dateRange: "Aug 2018 - May 2020",
-      bullets: [
-        "Developed responsive web applications for 20+ clients",
-        "Improved site performance scores by 35% on average",
-        "Introduced modern JavaScript frameworks to legacy codebases",
-      ],
-    },
-  ],
-  education: [
+ 
+};
+ /* education: [
     {
       school: "University Name",
       degree: "Bachelor of Science in Computer Science",
@@ -90,3 +107,4 @@ export const siteConfig = {
     },
   ],
 };
+*/

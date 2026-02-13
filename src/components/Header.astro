@@ -1,8 +1,9 @@
 ---
 import { siteConfig } from "../config";
 
-const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
+
 const hasExperience = siteConfig.experience && siteConfig.experience.length > 0;
+const hasProjects = siteConfig.projects && siteConfig.projects.length > 0;
 const hasEducation = siteConfig.education && siteConfig.education.length > 0;
 ---
 
@@ -20,6 +21,20 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           About
         </a>
       </li>
+
+        {
+        hasExperience && (
+          <li>
+            <a
+              href="#experience"
+              class="text-gray-700 hover:text-black transition-colors font-medium"
+            >
+              Experience
+            </a>
+          </li>
+        )
+      }
+      
       {
         hasProjects && (
           <li>
@@ -32,18 +47,7 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           </li>
         )
       }
-      {
-        hasExperience && (
-          <li>
-            <a
-              href="#experience"
-              class="text-gray-700 hover:text-black transition-colors font-medium"
-            >
-              Experience
-            </a>
-          </li>
-        )
-      }
+      
       {
         hasEducation && (
           <li>
@@ -56,6 +60,14 @@ const hasEducation = siteConfig.education && siteConfig.education.length > 0;
           </li>
         )
       }
+
+    
+
+       <li>
+    <a href="#contact" class="text-gray-700 hover:text-black transition-colors font-medium">
+      Contact
+    </a>
+  </li>
     </ul>
   </nav>
 </header>
