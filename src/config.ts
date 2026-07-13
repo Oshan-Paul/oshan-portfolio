@@ -69,7 +69,8 @@ export const siteConfig = {
     {
       name: "Predictive Maintenance System for Motors Using IIoT ",
       description:
-"Built an IIoT-based predictive maintenance system for industrial motors using ESP32, MQTT, and real-time sensor data (vibration, temperature, and current). Developed anomaly detection and failure prediction models, with edge-to-cloud communication enabling live monitoring, analytics, and alerting through a cloud dashboard."      link: "",
+"Built an IIoT-based predictive maintenance system for industrial motors using ESP32, MQTT, and real-time sensor data (vibration, temperature, and current). Developed anomaly detection and failure prediction models, with edge-to-cloud communication enabling live monitoring, analytics, and alerting through a cloud dashboard." ,
+      link: "",
       skills: ["Edge Computing", "Quest db", "Predictive Maintenance", "Real-Time Data Processing", "Sensors", "Anomaly Detection", "ESP-32"],
     },
     
