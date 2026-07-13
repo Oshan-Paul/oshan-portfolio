@@ -65,6 +65,15 @@ export const siteConfig = {
       link: "",
       skills: ["Python", "CNN", "HiveMQ", "Node-Red", "Sensors", "Raspberry-pi"],
     },
+
+    {
+      name: "Smart Waste Segrigation System",
+      description:
+        "An IoT-based automated system that detects and segregates waste into different categories using sensors and embedded control logic. It improves recycling efficiency, reduces manual effort, and promotes smarter, eco-friendly waste management practices.",
+      link: "",
+      skills: ["Python", "CNN", "HiveMQ", "Node-Red", "Sensors", "Raspberry-pi"],
+    },
+    
     {
       name: "Smart Watch",
       description:
