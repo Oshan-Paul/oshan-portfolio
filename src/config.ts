@@ -16,13 +16,13 @@ export const siteConfig = {
  experience: [
 
     {
-      company: "Ladybug - Exclusive Clothing Thrift Store",
-      title: "Founder",
-      dateRange: "Feb 2025 - Oct 2025",
+      company: "Tech Mahindra",
+      title: "Data Science Trainee",
+      dateRange: "Jun 2026 - Jul 2026",
       bullets: [
-        "Launched and managed a student thrift store, handling sourcing, pricing, marketing & sales.",
-        "Launched and managed a student thrift store, handling sourcing, pricing, marketing & sales.",
-        "Built a sustainable fashion initiative within the college community.",
+        "Assisted in developing machine learning models for real-world business use cases.",
+        "Performed data cleaning, preprocessing, and exploratory data analysis on large datasets.",
+        "Collaborated with the team to build and evaluate data-driven solutions using Python.",
       ],
     },
 
