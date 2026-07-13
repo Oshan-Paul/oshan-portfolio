@@ -15,6 +15,17 @@ export const siteConfig = {
 
  experience: [
 
+    {
+      company: "Ladybug - Exclusive Clothing Thrift Store",
+      title: "Founder",
+      dateRange: "Feb 2025 - Oct 2025",
+      bullets: [
+        "Launched and managed a student thrift store, handling sourcing, pricing, marketing & sales.",
+        "Launched and managed a student thrift store, handling sourcing, pricing, marketing & sales.",
+        "Built a sustainable fashion initiative within the college community.",
+      ],
+    },
+
    {
       company: "Ladybug - Exclusive Clothing Thrift Store",
       title: "Founder",
