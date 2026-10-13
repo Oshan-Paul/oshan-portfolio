@@ -863,7 +863,7 @@ smdSpots.forEach(([x,z,r],i)=>{
 pcb.traverse(o=>{ if(o.isMesh && !o.material.isMeshBasicMaterial){ o.castShadow=true; o.receiveShadow=true; } });
 
 /* ================= SCATTER LAYOUT ================= */
-const CX=small?-1.4:5.4, CY=2.2;   // phone: a bit left · laptop: a bit right
+const CX=small?1.4:4.6, CY=2.2;   // phone: a bit right · laptop: a bit left
 entries.forEach(e=>{
   const isBoard=e.o===boardG;
   e.home=e.o.position.clone(); e.ry=e.o.rotation.y;
