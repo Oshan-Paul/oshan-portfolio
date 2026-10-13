@@ -447,7 +447,7 @@ const small   = innerWidth < 760;
 const bootEl=document.getElementById('boot'), log=document.getElementById('bootlog'), bar=document.getElementById('bootbar');
 const lines=[
  'OP-BIOS v2.6  (c) 2026 OSHAN PAUL',
- 'CPU  : OP-01 DUAL-CORE @ 240MHz .......... <span class="ok">OK</span>',
+ 'CPU  : OP-16 DUAL-CORE @ 240MHz .......... <span class="ok">OK</span>',
  'MEM  : 520KB SRAM / 4MB FLASH ............ <span class="ok">OK</span>',
  'I2C  : SCAN 0x3C 0x68 0x76 .............. <span class="ok">OK</span>',
  'MQTT : BROKER HIVEMQ ..................... <span class="ok">CONNECTED</span>',
@@ -654,7 +654,7 @@ const silk=tex(2048,1350,(g,W,H)=>{
   t('GPIO',-7.0,-3.95); t('POE',3.6,-3.35); t('FAN',2.15,-2.75); t('PCIe',-8.3,1.75); t('RTC',-5.2,3.95); t('UART',-2.75,4.2);
   t('5V 5A',-6.9,4.0); t('HDMI0',-4.25,4.0); t('HDMI1',-1.55,4.0); t('CSI/DSI 0',.05,2.65); t('1',1.5,2.65);
   t('USB2',4.1,-2.35); t('USB3',4.1,-.15); t('ETH',4.15,1.25);
-  g.fillStyle='rgba(255,255,255,.7)'; g.font='700 30px Space Grotesk, sans-serif'; t('OP-01 · 8GB',-7.4,4.62);
+  g.fillStyle='rgba(255,255,255,.7)'; g.font='700 30px Space Grotesk, sans-serif'; t('OP-16 · 8GB',-7.4,4.62);
   g.fillStyle='rgba(255,255,255,.4)'; g.font='22px JetBrains Mono, monospace'; t('REV 1.0 · 2026',-7.4,4.9);
   [[-8.0,-2.0],[2.3,-4.4],[3.4,1.0]].forEach(([x,z])=>{ g.beginPath(); g.arc(px(x),pz(z),12,0,7); g.fill(); g.beginPath(); g.arc(px(x),pz(z),22,0,7); g.stroke(); });
 });
@@ -716,7 +716,7 @@ for(let i=0;i<NP;i++){
 function pointAt(p,d){ let i=1; while(i<p.L.length-1 && p.L[i]<d) i++; const a=p.pts[i-1],b=p.pts[i],seg=p.L[i]-p.L[i-1]; return tmpV.copy(a).lerp(b,seg?(d-p.L[i-1])/seg:0); }
 
 const INFO={
-  pcb :{id:'PCB',name:'OP-01 · Raspberry Pi 5 layout, 8 GB',desc:'85 × 56 mm. Every part floating on this page snaps onto it.'},
+  pcb :{id:'PCB',name:'OP-16 · Raspberry Pi 5 layout, 8 GB',desc:'85 × 56 mm. Every part floating on this page snaps onto it.'},
   u0  :{id:'U0',name:'OSHAN PAUL · custom core',desc:'My chip, at the centre of the board. Every bus routes through it: sensors in, decisions out.'},
   soc :{id:'U1',name:'BCM2712 SoC',desc:'Quad-core Arm Cortex-A76 @ 2.4 GHz with VideoCore VII graphics.'},
   ram :{id:'U2',name:'LPDDR4X RAM · 8 GB',desc:'Sits right next to the SoC: short traces, fast memory.'},
@@ -752,7 +752,7 @@ place(boardG,0,0,INFO.pcb);
   const l=labelPlane(2.9,2.9,topTex([
     ['700 118px Space Grotesk','OSHAN',.34],
     ['700 118px Space Grotesk','PAUL',.56],
-    ['500 30px JetBrains Mono','OP-01 · IoT / AI CORE',.75],
+    ['500 30px JetBrains Mono','OP-16 · IoT / AI CORE',.75],
     ['400 24px JetBrains Mono','DESIGNED 2026',.84,'rgba(30,30,30,.5)']],1,true));
   l.position.y=.281; g.add(l);
   const dot=new THREE.Mesh(new THREE.CircleGeometry(.09,16),M.hole); dot.rotation.x=-Math.PI/2; dot.position.set(-1.28,.283,-1.28); g.add(dot);
@@ -863,7 +863,7 @@ smdSpots.forEach(([x,z,r],i)=>{
 pcb.traverse(o=>{ if(o.isMesh && !o.material.isMeshBasicMaterial){ o.castShadow=true; o.receiveShadow=true; } });
 
 /* ================= SCATTER LAYOUT ================= */
-const CX=small?0:3.8, CY=2.2;
+const CX=small?0:5.6, CY=2.2;
 entries.forEach(e=>{
   const isBoard=e.o===boardG;
   e.home=e.o.position.clone(); e.ry=e.o.rotation.y;
