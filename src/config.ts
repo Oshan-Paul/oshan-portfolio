@@ -4,7 +4,7 @@ export const siteConfig = {
   description: "Portfolio website of Ryan Fitzgerald",
   accentColor: "#030303c1",
   social: {
-    email: "oshan@oshanpaul.com",
+    email: "oshaanpaul@gmail.com",
     linkedin: "https://www.linkedin.com/in/oshanpaul",
     //LeetCode: "",
    // github: "",
